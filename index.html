@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!---
+
+    hellooooo feel free to peruse my code excuse the messiness :3
+
+    --->
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>VIRTUAL DIVA</title>
+        <meta name="description" content="A Hatsune Miku inspired site by a fan, for fans!">
+        <link rel="shortcut icon" href="/images/bullet.gif">
+        <link rel="stylesheet" href="/style.css">
+        
+        <script src="/scripts/music.js" defer></script>
+        <script src="/scripts/comment-widget.js" defer></script>
+        <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous" defer></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+    </head>
+    <body>
+        <div class="lines"></div>
+
+        <div id="wrapper">
+            <div id="miku">
+                <div class="virtualdiva"><img src="/images/virtualdiva.png"></div>
+            </div>
+
+            <div class="container">
+                <div class="main">
+                    <iframe title="mainframe" id="mainframe" src="/pages/home.html" width="100%" height="100%" name="frame"></iframe>
+                    <div class="banner"><img src="/images/banner.jpeg"></div>
+                </div>
+
+                <div class="updates">
+                    <div class="title">
+                        <header style="margin-bottom:0px;">UPDATES</header>
+                    </div>
+
+                    <div class="inner">
+                        <div class="update"><b>09.27.24:</b> Many new songs added to the Songs page!</div>
+                        <div class="update"><b>09.22.24:</b> The Jukebox has been updated! Now featuring syudou propaganda!</div>
+                        <div class="update"><b>09.21.24:</b> A VOCALOID quiz is now available under the Games page!</div>
+                        <div class="update"><b>09.17.24:</b> The VOCALOID webring widget has been updated! Please recopy the code if necessary!</div>
+                        <div class="update"><b>09.15.24:</b> New header, commissioned from the wonderful @newlegend!</div>
+                        <div class="update"><b>09.06.24:</b> Site has been moved to Leprd!</div>
+                        <div class="update"><b>09.03.24:</b> Music player code has been updated, located under the Resources page! Emojis are now available in the comments box!</div>
+                        <div class="update"><b>08.07.24:</b> Added a new song! Currently working on a VOCALOID quiz for the Games page!</div>
+                        <div class="update"><b>08.04.24:</b> New site design and button!</div>
+                        <div class="update"><b>07.25.24:</b> Various small changes, including a new Credits page!</div>
+                        <div class="update"><b>04.22.24:</b> Major changes to the webring!</div>
+                        <div class="update"><b>03.30.24:</b> Fixed a bug with the chatbox that caused multiple messages!</div>
+                        <div class="update"><b>08.03.23:</b> New webring open for business!</div>
+                        <div class="update"><b>05.02.23:</b> Site has been moved to Hostinger! Oekaki has been updated!</div>
+                        <div class="update"><b>04.27.23:</b> Added one new song!</div>
+                        <div class="update"><b>03.26.23:</b> Reworked the Puella Magi Madoka Magica shrine!</div>
+                        <div class="update"><b>03.21.23:</b> Added an Oekaki page! Retired iMiku!</div>
+                        <div class="update"><b>03.20.23:</b> Site has been moved to Netlify! </div>
+                        <div class="update"><b>03.19.23:</b> Site is completely moved to AWS!</div>
+                        <div class="update"><b>03.17.23:</b> Site is in the process of being moved to AWS! Some pages and images may not load properly!</div>
+                        <div class="update"><b>02.10.23:</b> Added a Sitemap!</div>
+                        <div class="update"><b>01.27.23:</b> New look to Figures!</div>
+                        <div class="update"><b>01.26.23:</b> Added two new songs!</div>
+                        <div class="update" style="margin-bottom:0;"><b>1.19.23:</b> Welcome to VIRTUAL DIVA V3!</div>
+                    </div>
+                </div>
+
+                <div class="links">
+                    <div class="title">
+                        <header style="margin-bottom:0px;">DIRECTORY</header>
+                    </div>
+
+                    <div class="inner" style="padding:10px;">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/home.html" target="frame">Home</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/about.html" target="frame">About</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/songs.html" target="frame">Songs</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/figures.html" target="frame">Figures</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/shrines.html" target="frame">Shrines</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/resources.html" target="frame">Resources</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="https://webring.adilene.net/index.php" target="_parent">Webring</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/games.html" target="frame">Games</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="https://oekaki.adilene.net/" target="_parent">Oekaki</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/credits.html" target="frame">Credits</a></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="/images/bullet2.gif" class="bullet"></td><td><a href="/pages/sitemap.html" target="frame">Sitemap</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <div class="title">
+                        <header style="margin-bottom:0px;">STATS</header>
+                    </div>
+
+                    <div class="inner" style="display:flex; flex-direction:column; justify-content:space-between; height:100%; text-align:center; color:var(--color);">
+                        <div id="root">...</div>
+                        <div><b>Views:</b> <span id="viewcount"></span></div>
+                        <div><b>Hits:</b> <span id="hitcount"></span></div>
+                        <div><b>Last Updated:</b> <span id="lastupdated"></span></div>
+                        <img src="/images/sitebutton.gif" style="margin:auto; margin-top:5px;">
+                    </div>
+                </div>
+
+                <div class="jukebox">
+                    <div class="title">
+                        <header style="margin-bottom:0px;">JUKEBOX</header>
+                    </div>
+
+                    <div class="inner" style="padding:0;">
+                        <div id="musicplayer">
+                            <div style="text-align:center;">
+                                <div class="now-playing" style="text-align:center; background-color:var(--h); padding:5px;"></div>
+                                <div style="text-align:center; background-color:var(--h); padding:5px; margin-top:10px;">
+                                    <div class="track-name"></div>
+                                    <div class="track-artist"></div>
+                                </div>
+                            </div>
+
+                            <div style="display:flex; flex-direction:column; justify-content:space-between; align-content:space-between; height:110px;">
+                                <div class="seeking">
+                                    <div class="current-time">00:00</div>
+
+                                    <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+                                    <div class="total-duration">0:00</div>
+                                </div>
+
+                                <table class="controls">
+                                    <tr>
+                                        <td>
+                                            <div class="prev-track" onclick="prevTrack()"><i class="fas fa-solid fa-backward"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="playpause-track" onclick="playpauseTrack()" ><i class="fas fa-solid fa-play"></i></div>
+                                        </td>
+                                        <td>
+                                            <div class="next-track" onclick="nextTrack()"><i class="fas fa-solid fa-forward"></i></div>
+                                        </td>
+                                    </tr>
+                                </table>
+
+                                <div class="volume">
+                                    <div style="margin-right:5px;"><i class="fas fa-volume-up"></i></div>
+                                    <input type="range" min="1" max="100" value="100" class="volume_slider" onchange="setVolume()">
+
+                                </div>
+                            </div>
+
+                            <audio id="music" src=""></audio>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chatbox">
+                    <div class="title">
+                        <header style="margin-bottom:0px;">COMMENTS</header>
+                    </div>
+
+                    <div id="c_widget"></div>
+                </div>
+            </div>
+
+            <div class="footer">
+                best viewed on desktop &lt;3 coded with love &lt;3 adilene 2021 - 2024
+            </div>
+        </div>
+
+        <div class="bg"></div>
+
+        <!-- scripts -->
+
+        <script>
+            var http = new XMLHttpRequest();
+            http.onreadystatechange = function(){
+                if (this.readyState == 4 && this.status == 200){
+                    var site_data = JSON.parse(this.responseText);
+                    var num_arr = site_data.info.views.toString().split("");
+                    var num_str = "";
+                    for (i = 0; i < num_arr.length; i++){
+                        num_str += num_arr[i];
+                        if ( (num_arr.length-1 - i) % 3 == 0 && (num_arr.length-1 - i) != 0 ){num_str += ",";}
+                    }
+                    document.getElementById("viewcount").innerHTML = num_str;
+
+                    var num_arr2 = site_data.info.hits.toString().split("");
+                    var num_str2 = "";
+                    for (i = 0; i < num_arr2.length; i++){
+                        num_str2 += num_arr2[i];
+                        if ( (num_arr2.length-1 - i) % 3 == 0 && (num_arr2.length-1 - i) != 0 ){num_str2 += ",";}
+                    }
+                    document.getElementById("hitcount").innerHTML = num_str2;
+                }
+            };
+            http.open("GET", "https://weirdscifi.ratiosemper.com/neocities.php?sitename=adilene", true);
+            http.send();
+        </script>
+
+        <script>
+            const username = 'skycchi';
+            const repoName = 'adilene';
+            const token = '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';
+            const apiUrl = `https://api.github.com/repos/${username}/${repoName}`;
+
+            fetch(apiUrl, {
+                method: 'GET',
+                headers: {
+                    'Authorization': `token ${token}`
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                const lastUpdated = new Date(data.updated_at);
+                const formattedDate = lastUpdated.toLocaleDateString('en-US', {
+                    month: '2-digit',
+                    day: '2-digit',
+                    year: '2-digit',
+                }).replace(/\//g, '.');
+                document.getElementById('lastupdated').textContent = `${formattedDate}`;
+            })
+            .catch(error => console.error('Error:', error));
+        </script>
+
+        <!-- the following code does not track you
+        it only determines if someone is online -->
+
+        <script defer type='text/javascript'>
+            const firebaseConfig ={
+                apiKey:"AIzaSyCeZk8TIsWfhGfD7ZyTloHybiO-7E6B3cQ",
+                authDomain:"online-user-counter.firebaseapp.com",
+                databaseURL:"https://online-user-counter-default-rtdb.firebaseio.com",
+                projectId:"online-user-counter",
+                storageBucket:"online-user-counter.appspot.com",
+                messagingSenderId:"201622433719",
+                appId:"1:201622433719:web:2fee36f21385ce4e22c232",
+                measurementId:"G-90G2VEMZCZ"
+            };
+
+            firebase.initializeApp(firebaseConfig);
+        </script>
+
+        <script>
+            function setCookie(cname, cvalue, exdays){
+                var d = new Date();
+                d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                var expires = "expires=" + d.toUTCString();
+                document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+            }
+
+            function getCookie(cname){
+                var name = cname + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++){
+                    var c = ca[i];
+                    while (c.charAt(0) == ' '){
+                        c = c.substring(1);
+                    }
+                    if (c.indexOf(name) == 0){
+                        return c.substring(name.length, c.length);
+                    }
+                }
+                return "";
+            }
+
+            var track = (xx) =>{
+                var userStatusDatabaseRef = firebase.database().ref('/tempUser/' + xx);
+                var isOfflineForDatabase ={
+                    state: 'offline',
+                    last_changed: firebase.database.ServerValue.TIMESTAMP,
+                };
+                var isOnlineForDatabase ={
+                    state: 'online',
+                    last_changed: firebase.database.ServerValue.TIMESTAMP,
+                };
+
+                firebase.database().ref('.info/connected').on('value', function(snapshot){
+                    if (snapshot.val() == false){
+                        return;
+                    };
+                    userStatusDatabaseRef.onDisconnect().set(isOfflineForDatabase).then(function(){
+                        userStatusDatabaseRef.set(isOnlineForDatabase);
+                    });
+                });
+
+                checkOnline()
+            }
+
+            var user = getCookie("tracking");
+            if (user != ""){
+                track(user)
+            }
+            else{
+                user = Date.now().toString(16);
+                if (user != "" && user != null){
+                    setCookie("tracking", user, 365);
+                    track(user)
+                }
+            }
+
+            function checkOnline(){
+                firebase.database().ref('/tempUser/').orderByChild('state').equalTo("online").on("value", (data =>{
+                    var liveVisitorCounter = data.numChildren();
+                    var root = document.getElementById('root');
+                    root.innerText = liveVisitorCounter + " Online";
+
+                }))
+            }
+        </script>
+
+    </body>
+</html>
