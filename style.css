@@ -1,6 +1,6 @@
 @font-face{
     font-family:'Legacy';
-    src:url(/fonts/legacy.otf);
+    src:url(fonts/legacy.otf);
 }
 
 :root{
@@ -22,7 +22,7 @@
     box-sizing:border-box;
     scrollbar-color:var(--pink) #fff;
     scrollbar-width:thin;
-    cursor:url('/images/arrow.png'), pointer;
+    cursor:url('images/arrow.png'), pointer;
 }
 
 ::-webkit-scrollbar{
@@ -38,7 +38,7 @@
 
 ::-webkit-scrollbar-thumb:hover{
     background:#ed75ae;
-    cursor:url('/images/arrow.png');
+    cursor:url('images/arrow.png');
 }
 
 ::-webkit-scrollbar-track{
