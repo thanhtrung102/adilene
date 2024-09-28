@@ -22,37 +22,37 @@ let track_list = [
    {
         name:"LOL",
         artist:"syudou",
-        path:"/music/LOL.mp3"
+        path:"music/LOL.mp3"
     },
    {
         name:"Annoyance",
         artist:"syudou",
-        path:"/music/Annoyance.mp3"
+        path:"music/Annoyance.mp3"
     },
    {
         name:"The Religion of Loneliness",
         artist:"syudou",
-        path:"/music/The Religion of Loneliness.mp3",
+        path:"music/The Religion of Loneliness.mp3",
     },
    {
         name:"Hebereke Junkie",
         artist:"syudou",
-        path:"/music/Hebereke Junkie.mp3"
+        path:"music/Hebereke Junkie.mp3"
     },
     {
         name:"Bitter Choco Decoration",
         artist:"syudou",
-        path:"/music/Bitter Choco Decoration.mp3"
+        path:"music/Bitter Choco Decoration.mp3"
     },
     {
         name:"Flamingo",
         artist:"syudou",
-        path:"/music/Flamingo.mp3"
+        path:"music/Flamingo.mp3"
     },
     {
         name:"Call Boy",
         artist:"syudou",
-        path:"/music/Call Boy.mp3"
+        path:"music/Call Boy.mp3"
     }
 ];
 
