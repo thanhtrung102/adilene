@@ -20,11 +20,6 @@ let curr_track = document.getElementById("music");
 
 let track_list = [
    {
-        name:"Introduction and Rondo Capriccioso",
-        artist:"Saint-Saëns",
-        path:"music/y2mate.com - Introduction and Rondo Capriccioso SaintSaëns from Shigatsu wa Kimi no Uso Soundtrack.mp3"
-    },
-   {
         name:"Liz and the blue bird",
         artist:"Kensuke Ushio",
         path:"music/y2mate.com - リズと青い鳥 full.mp3"
