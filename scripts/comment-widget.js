@@ -360,28 +360,28 @@ function displayComments(comments){
     emojiWindow.className = 'c-emojiPicker';
     emojiWindow.id = 'c-emojiPicker';
     emojiWindow.innerHTML = `
-        <img src="images/emojis/miku_39.gif" alt="miku_39" class="c-emoji" onclick="addEmoji('emoji1')">
-        <img src="images/emojis/miku_cheer.gif" alt="miku_cheer" class="c-emoji" onclick="addEmoji('emoji2')">
-        <img src="images/emojis/miku_nice.gif" alt="miku_nice" class="c-emoji" onclick="addEmoji('emoji3')">
-        <img src="images/emojis/miku_celebration.gif" alt="miku_celebration" class="c-emoji" onclick="addEmoji('emoji4')">
-        <img src="images/emojis/miku_love.gif" alt="miku_love" class="c-emoji" onclick="addEmoji('emoji5')">
-        <img src="images/emojis/miku_exhausted.gif" alt="miku_exhausted" class="c-emoji" onclick="addEmoji('emoji6')">
-        <img src="images/emojis/rin_amazed.gif" alt="rin_amazed" class="c-emoji" onclick="addEmoji('emoji7')">
-        <img src="images/emojis/rin_angry.gif" alt="rin_angry" class="c-emoji" onclick="addEmoji('emoji8')">
-        <img src="images/emojis/rin_yes.gif" alt="rin_yes" class="c-emoji" onclick="addEmoji('emoji9')">
-        <img src="images/emojis/rin_snooze.gif" alt="rin_snooze" class="c-emoji" onclick="addEmoji('emoji10')">
-        <img src="images/emojis/len_shy.gif" alt="len_shy" class="c-emoji" onclick="addEmoji('emoji11')">
-        <img src="images/emojis/len_shocked.gif" alt="len_shocked" class="c-emoji" onclick="addEmoji('emoji12')">
-        <img src="images/emojis/len_no.gif" alt="len_no" class="c-emoji" onclick="addEmoji('emoji13')">
-        <img src="images/emojis/len_plead.gif" alt="len_plead" class="c-emoji" onclick="addEmoji('emoji14')">
-        <img src="images/emojis/luka_byebye.gif" alt="luka_byebye" class="c-emoji" onclick="addEmoji('emoji15')">
-        <img src="images/emojis/luka_blegh.gif" alt="luka_blegh" class="c-emoji" onclick="addEmoji('emoji16')">
-        <img src="images/emojis/luka_confused.gif" alt="luka_confused" class="c-emoji" onclick="addEmoji('emoji17')">
-        <img src="images/emojis/meiko_ok.gif" alt="meiko_ok" class="c-emoji" onclick="addEmoji('emoji18')">
-        <img src="images/emojis/meiko_drink.gif" alt="meiko_drink" class="c-emoji" onclick="addEmoji('emoji19')">
-        <img src="images/emojis/kaito_cry.gif" alt="kaito_cry" class="c-emoji" onclick="addEmoji('emoji20')">
-        <img src="images/emojis/kaito_despair.gif" alt="kaito_despair" class="c-emoji" onclick="addEmoji('emoji21')">
-        <img src="images/emojis/kaito_nogood.gif" alt="kaito_nogood" class="c-emoji" onclick="addEmoji('emoji22')">
+        <img src="https://adilene.net/images/emojis/miku_39.gif" alt="miku_39" class="c-emoji" onclick="addEmoji('emoji1')">
+        <img src="https://adilene.net/images/emojis/miku_cheer.gif" alt="miku_cheer" class="c-emoji" onclick="addEmoji('emoji2')">
+        <img src="https://adilene.net/images/emojis/miku_nice.gif" alt="miku_nice" class="c-emoji" onclick="addEmoji('emoji3')">
+        <img src="https://adilene.net/images/emojis/miku_celebration.gif" alt="miku_celebration" class="c-emoji" onclick="addEmoji('emoji4')">
+        <img src="https://adilene.net/images/emojis/miku_love.gif" alt="miku_love" class="c-emoji" onclick="addEmoji('emoji5')">
+        <img src="https://adilene.net/images/emojis/miku_exhausted.gif" alt="miku_exhausted" class="c-emoji" onclick="addEmoji('emoji6')">
+        <img src="https://adilene.net/images/emojis/rin_amazed.gif" alt="rin_amazed" class="c-emoji" onclick="addEmoji('emoji7')">
+        <img src="https://adilene.net/images/emojis/rin_angry.gif" alt="rin_angry" class="c-emoji" onclick="addEmoji('emoji8')">
+        <img src="https://adilene.net/images/emojis/rin_yes.gif" alt="rin_yes" class="c-emoji" onclick="addEmoji('emoji9')">
+        <img src="https://adilene.net/images/emojis/rin_snooze.gif" alt="rin_snooze" class="c-emoji" onclick="addEmoji('emoji10')">
+        <img src="https://adilene.net/images/emojis/len_shy.gif" alt="len_shy" class="c-emoji" onclick="addEmoji('emoji11')">
+        <img src="https://adilene.net/images/emojis/len_shocked.gif" alt="len_shocked" class="c-emoji" onclick="addEmoji('emoji12')">
+        <img src="https://adilene.net/images/emojis/len_no.gif" alt="len_no" class="c-emoji" onclick="addEmoji('emoji13')">
+        <img src="https://adilene.net/images/emojis/len_plead.gif" alt="len_plead" class="c-emoji" onclick="addEmoji('emoji14')">
+        <img src="https://adilene.net/images/emojis/luka_byebye.gif" alt="luka_byebye" class="c-emoji" onclick="addEmoji('emoji15')">
+        <img src="https://adilene.net/images/emojis/luka_blegh.gif" alt="luka_blegh" class="c-emoji" onclick="addEmoji('emoji16')">
+        <img src="https://adilene.net/images/emojis/luka_confused.gif" alt="luka_confused" class="c-emoji" onclick="addEmoji('emoji17')">
+        <img src="https://adilene.net/images/emojis/meiko_ok.gif" alt="meiko_ok" class="c-emoji" onclick="addEmoji('emoji18')">
+        <img src="https://adilene.net/images/emojis/meiko_drink.gif" alt="meiko_drink" class="c-emoji" onclick="addEmoji('emoji19')">
+        <img src="https://adilene.net/images/emojis/kaito_cry.gif" alt="kaito_cry" class="c-emoji" onclick="addEmoji('emoji20')">
+        <img src="https://adilene.net/images/emojis/kaito_despair.gif" alt="kaito_despair" class="c-emoji" onclick="addEmoji('emoji21')">
+        <img src="https://adilene.net/images/emojis/kaito_nogood.gif" alt="kaito_nogood" class="c-emoji" onclick="addEmoji('emoji22')">
     `;
 
     c_container.appendChild(emojiWindow);
